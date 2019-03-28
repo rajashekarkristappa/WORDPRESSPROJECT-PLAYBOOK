@@ -3,8 +3,19 @@ pipeline{
           stages{
             stage ('checkout repo'){
                steps {
-                checkout scm
-               }       
+                checkout([$class: 'GitSCM', branches: [[name: '*/master']], 
+                doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [],
+                userRemoteConfigs: [[url: 'https://github.com/rajashekarkristappa/WORDPRESSPROJECT-PLAYBOOK.git']]])
+               } 
+
+            stage ('deploy'){
+                steps{
+                  sh '''
+			ansible-playbook /etc/ansible/wordpressproject/playbook.yml -i /etc/ansible/wordpressproject/hosts -u ansible  
+               	   '''
+                 }
+                 
+               }      
           
               }
          
