@@ -1,14 +1,13 @@
-172.31.2.54  ansible_connection=ssh ansible_user=ansible ansible_ssh_private_key_file=/home/ansible/.ssh/id_rsa
-172.31.13.219  ansible_connection=ssh ansible_user=ansible ansible_ssh_private_key_file=/home/ansible/.ssh/id_rsa
-172.31.14.6  ansible_connection=ssh ansible_user=ansible ansible_ssh_private_key_file=/home/ansible/.ssh/id_rsa
+172.31.2.54  ansible_connection=ssh ansible_user=ansible ansible_ssh_private_key_file=/home/ansible/id_rsa
+172.31.13.219  ansible_connection=ssh ansible_user=ansible ansible_ssh_private_key_file=/home/ansible/id_rsa
+172.31.14.6  ansible_connection=ssh ansible_user=ansible ansible_ssh_private_key_file=/home/ansible/id_rsa
 
 [nginx]
-172.31.2.54  ansible_connection=ssh ansible_user=ansible ansible_ssh_private_key_file=/home/ansible/.ssh/id_rsa
+172.31.2.54  ansible_connection=ssh ansible_user=ansible 
 
 [wordpress]
-172.31.13.219  ansible_connection=ssh ansible_user=ansible ansible_ssh_private_key_file=/home/ansible/.ssh/id_rsa
-172.31.14.6  ansible_connection=ssh ansible_user=ansible ansible_ssh_private_key_file=/home/ansible/.ssh/id_rsa
-
+172.31.13.219  ansible_connection=ssh ansible_user=ansible 
+172.31.14.6  ansible_connection=ssh ansible_user=ansible 
 [localhost]
-172.31.2.54  ansible_connection=ssh ansible_user=ansible ansible_ssh_private_key_file=/home/ansible/.ssh/id_rsa
+172.31.2.54  ansible_connection=ssh ansible_user=ansible 
 
