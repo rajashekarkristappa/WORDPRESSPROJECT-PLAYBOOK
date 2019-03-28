@@ -1,14 +1,14 @@
-172.31.2.54
-172.31.13.219
-172.31.14.6
+172.31.2.54 ansible_connection=ssh ansible_user=ansible ansible_ssh_public_key_file=/home/ansible/.ssh/authorized_keys
+172.31.13.219 ansible_connection=ssh ansible_user=ansible ansible_ssh_public_key_file=/home/ansible/.ssh/authorized_keys
+172.31.14.6 ansible_connection=ssh ansible_user=ansible ansible_ssh_public_key_file=/home/ansible/.ssh/authorized_keys
 
 [nginx]
-172.31.2.54
+172.31.2.54 ansible_connection=ssh ansible_user=ansible ansible_ssh_public_key_file=/home/ansible/.ssh/authorized_keys
 
 [wordpress]
-172.31.13.219
-172.31.14.6
+172.31.13.219 ansible_connection=ssh ansible_user=ansible ansible_ssh_public_key_file=/home/ansible/.ssh/authorized_keys
+172.31.14.6 ansible_connection=ssh ansible_user=ansible ansible_ssh_public_key_file=/home/ansible/.ssh/authorized_keys
 
 [localhost]
-172.31.2.54
+172.31.2.54 ansible_connection=ssh ansible_user=ansible ansible_ssh_public_key_file=/home/ansible/.ssh/authorized_keys
 
