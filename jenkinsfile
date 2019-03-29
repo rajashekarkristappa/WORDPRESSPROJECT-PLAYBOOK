@@ -4,9 +4,7 @@ pipeline{
           stages{
             stage ('checkout repo'){
                steps {
-                checkout([$class: 'GitSCM', branches: [[name: '*/master']], 
-                doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [],
-                userRemoteConfigs: [[url: 'https://github.com/rajashekarkristappa/WORDPRESSPROJECT-PLAYBOOK.git']]])
+                git 'https://github.com/rajashekarkristappa/WORDPRESSPROJECT-PLAYBOOK.git'
                } 
 
             stage ('deploy'){
